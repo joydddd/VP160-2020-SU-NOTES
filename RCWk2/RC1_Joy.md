@@ -44,6 +44,7 @@ Vectors
     * dot product $\overrightarrow{u}\cdot \overrightarrow{w}=u_{x}w_{x}+u_{y}w_{y}+u_{z}w_{z}$
     * cross product $\overrightarrow{u}\times \overrightarrow{w}=(u_{y}w_{z}-u_{z}w_{y})\hat{n_{x}}+(u_{z}w_{x}-u_{x}w_{z})\hat{n_{y}}+(u_{x}w_{y}-u_{y}w_{x})\hat{n_{z}}$
 * Cylindrical
+![Cylindrical Coordinate Sys](./pics/Cyl.png)
   * {$\hat{n_{\rho}}$, $\hat{n_{\varphi}}$, $\hat{n_{z}}$}
     * $\rho=\sqrt{x^{2}+y^{2}}$
     * $\varphi=\text{arctan}\frac{y}{x}$
@@ -53,6 +54,7 @@ Vectors
   * $\overrightarrow{r}=\rho\hat{n_{\rho}}+z\hat{n_{z}}$
     * NOT directly differentiable!!! Will discuss later
 * Spherical
+![Sopherical](./pics/Sopher.png)
   * longitude and latitude system
   * {$\hat{n_{r}}$, $\hat{n_{\varphi}}$, $\hat{n_{\theta}}$}
     *  $\rho=\sqrt{x^{2}+y^{2}+z^{2}}$ 
