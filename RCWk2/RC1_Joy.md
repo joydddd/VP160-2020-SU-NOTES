@@ -18,7 +18,7 @@ Numbers
 
 Units
 
-* unit prefixes: nm($10^{-9}, nano), $\mu m$($10^{-6}$, micro), um ($10^{-3}$, mili), km ($10^3$, kilo) ... 
+* unit prefixes: nm($10^{-9}$, nano), $\mu m$($10^{-6}$, micro), um ($10^{-3}$, mili), km ($10^3$, kilo) ... 
 * unit conversions
 
 Vectors
