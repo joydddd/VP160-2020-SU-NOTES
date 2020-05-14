@@ -1,4 +1,9 @@
 # VP160 RC1
+Github: https://github.com/joydddd/VP160-2020-SU-NOTES
+
+you may need chrome + MathJax Plugin for Github to view properly
+
+Github version will the most up to date one. 
 ## Concepts
 Physical Quantities: ALWAYS number + unit
 
