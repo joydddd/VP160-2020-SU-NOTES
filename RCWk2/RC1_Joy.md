@@ -3,7 +3,7 @@ Github: https://github.com/joydddd/VP160-2020-SU-NOTES
 
 you may need chrome + MathJax Plugin for Github to view properly
 
-Github version will the most up to date one. 
+Github version will be the most up to date one. 
 ## Concepts
 Physical Quantities: ALWAYS number + unit
 
@@ -24,9 +24,20 @@ Units
 Vectors
 
 * addition/ constant multiplication/ subtraction --> vector
-* dot product --> scale 
+* dot product: vector . vector --> scale 
+  * $$\overrightarrow{u}\cdot\overrightarrow{v} = \left<\left(\begin{matrix} u_x\\u_y\\u_z \end{matrix}\right), \left(\begin{matrix} v_x\\v_y\\v_z \end{matrix}\right)\right> =u_x v_x
+  + u_y v_y + u_z v_z
   * e.g. $P = \overrightarrow{F} \cdot \overrightarrow{v}$ = $|\overrightarrow{F}|  |\overrightarrow{v}| cos \theta$
-* cross product 
+* cross product: vector x vector --> vector
+  * $$ \overrightarrow{u} \times \overrightarrow{v} = 
+    \left|\begin{matrix} 
+    \hat{x} & \hat{y} &\hat{z} \\
+    u_x & u_y & u_z\\
+    v_z & v_y & v_z\\
+    \end{matrix}
+    \right|
+    = \left|\begin{matrix} u_y & v_z \\v_y & v_z \\\end{matrix}\right|\hat{x}-\left|\begin{matrix} u_x & v_z \\v_x & v_z \\\end{matrix}\right|\hat{y}+\left|\begin{matrix} u_x & v_y \\v_x & v_y \\\end{matrix}\right|\hat{z}
+    $$
   * e.g. $\overrightarrow{F} = I \overrightarrow{L} \times \overrightarrow{B}$
   * length: the cross section area of two vector $|\overrightarrow{F}| = I |\overrightarrow{L}| |\overrightarrow{B}| sin \theta$
   * direction: right handed rule
