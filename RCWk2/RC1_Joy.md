@@ -18,7 +18,12 @@ Numbers
 
 Units
 
-* unit prefixes: nm($10^{-9}$, nano), $\mu m$($10^{-6}$, micro), um ($10^{-3}$, mili), km ($10^3$, kilo) ... 
+* unit prefixes:
+  
+  n     |$\mu$ |m     |*     |k     |M     |G     |T     |P
+  ------|------|------|------|------|------|------|------|------
+  nano  |micor |mili  |/     |kilo  |mega  |giga  |tera  |peta
+  $10^{-9}$|$10^{-6}$|$10^{-3}$|$10^0$|$10^3$|$10^6$|$10^9$|$10^{12}$|$10^{15}$|
 * unit conversions
 
 Vectors
@@ -26,7 +31,7 @@ Vectors
 * addition/ constant multiplication/ subtraction --> vector
 * dot product: vector . vector --> scale 
   * $$\overrightarrow{u}\cdot\overrightarrow{v} = \left<\left(\begin{matrix} u_x\\u_y\\u_z \end{matrix}\right), \left(\begin{matrix} v_x\\v_y\\v_z \end{matrix}\right)\right> =u_x v_x
-  + u_y v_y + u_z v_z
+  + u_y v_y + u_z v_z $$
   * e.g. $P = \overrightarrow{F} \cdot \overrightarrow{v}$ = $|\overrightarrow{F}|  |\overrightarrow{v}| cos \theta$
 * cross product: vector x vector --> vector
   * $$ \overrightarrow{u} \times \overrightarrow{v} = 
@@ -36,7 +41,7 @@ Vectors
     v_z & v_y & v_z\\
     \end{matrix}
     \right|
-    = \left|\begin{matrix} u_y & v_z \\v_y & v_z \\\end{matrix}\right|\hat{x}-\left|\begin{matrix} u_x & v_z \\v_x & v_z \\\end{matrix}\right|\hat{y}+\left|\begin{matrix} u_x & v_y \\v_x & v_y \\\end{matrix}\right|\hat{z}
+    = \left|\begin{matrix} u_y & v_z \\ v_y & v_z \\ \end{matrix}\right|\hat{x}-\left|\begin{matrix} u_x & v_z \\ v_x & v_z \\ \end{matrix}\right|\hat{y}+\left|\begin{matrix} u_x & v_y \\ v_x & v_y \\ \end{matrix}\right|\hat{z}
     $$
   * e.g. $\overrightarrow{F} = I \overrightarrow{L} \times \overrightarrow{B}$
   * length: the cross section area of two vector $|\overrightarrow{F}| = I |\overrightarrow{L}| |\overrightarrow{B}| sin \theta$
