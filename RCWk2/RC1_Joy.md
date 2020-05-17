@@ -1,4 +1,7 @@
-# VP160 RC1
+# VP160 RC1 
+# Physical Quantities, Coordinate Sys, 1D Kinetics
+by Joy DONG
+
 Github: https://github.com/joydddd/VP160-2020-SU-NOTES
 
 you may need chrome + MathJax Plugin for Github to view properly
@@ -12,9 +15,18 @@ Scale / Vector ?
 Numbers
 
 * Scientific notation: $6.02 \times 10^{23}$
-* significant figures
-* uncertainty 
-  * e.g. $1.259 \pm 0.001 \mu A$ 
+* significant figures: (Simple Approach)
+  * addition/subtraction: round to least most decimal point
+  * multiplication/division: round to least number of SF
+  * complicated calculation: Always round to 
+  * REAL WORLD: round to uncertainty dimension
+* uncertainty: (We don't ask for uncertainty analysis in VP160)
+  * e.g. $1.259 \pm 0.001 \mu A$ (always only one significant figure)
+  * $u_{\alpha X} = \alpha\cdot u_X$
+  * $u_{X\pm Y} = \sqrt{u_X^2 + u_Y^2}$
+  * $u_{r, XY} = u_{r, X/Y} = \sqrt{u_{r,X}^2 + u_{r,Y}^2}$, r denotes relative uncertainty
+  * $u_{r,X^k} = k\cdot u_{r,X}$
+  * etc. (ref. Uncertainty Analysis Handbook, VP141/VP241)
 
 Units
 
@@ -28,29 +40,32 @@ Units
 
 Vectors
 
-* addition/ constant multiplication/ subtraction --> vector
+* addition/ constant multiplication/ subtraction --> vector calculus
 * dot product: vector . vector --> scale 
-  * $$\overrightarrow{u}\cdot\overrightarrow{v} = \left<\left(\begin{matrix} u_x\\u_y\\u_z \end{matrix}\right), \left(\begin{matrix} v_x\\v_y\\v_z \end{matrix}\right)\right> =u_x v_x
-  + u_y v_y + u_z v_z $$
+  * $$\overrightarrow{u}\cdot\overrightarrow{v} = \left<\left(\begin{matrix} u_x\\\\u_y\\\\u_z \end{matrix}\right), \left(\begin{matrix}v_x\\\\v_y\\\\v_z \end{matrix}\right)\right> =u_x v_x + u_y v_y + u_z v_z $$
   * e.g. $P = \overrightarrow{F} \cdot \overrightarrow{v}$ = $|\overrightarrow{F}|  |\overrightarrow{v}| cos \theta$
-* cross product: vector x vector --> vector
+* cross product: vector x vector --> vector 
   * $$ \overrightarrow{u} \times \overrightarrow{v} = 
     \left|\begin{matrix} 
-    \hat{x} & \hat{y} &\hat{z} \\
-    u_x & u_y & u_z\\
-    v_z & v_y & v_z\\
+    \hat{x} & \hat{y} &\hat{z} \\\\
+    u_x & u_y & u_z\\\\
+    v_z & v_y & v_z\\\\
     \end{matrix}
     \right|
-    = \left|\begin{matrix} u_y & v_z \\ v_y & v_z \\ \end{matrix}\right|\hat{x}-\left|\begin{matrix} u_x & v_z \\ v_x & v_z \\ \end{matrix}\right|\hat{y}+\left|\begin{matrix} u_x & v_y \\ v_x & v_y \\ \end{matrix}\right|\hat{z}
+    = \left|\begin{matrix} u_y & v_z \\\\ v_y & v_z \\\\ \end{matrix}\right|\hat{x}-\left|\begin{matrix} u_x & v_z \\\\ v_x & v_z \\\\ \end{matrix}\right|\hat{y}+\left|\begin{matrix} u_x & v_y \\\\ v_x & v_y \\\\ \end{matrix}\right|\hat{z}
     $$
   * e.g. $\overrightarrow{F} = I \overrightarrow{L} \times \overrightarrow{B}$
   * length: the cross section area of two vector $|\overrightarrow{F}| = I |\overrightarrow{L}| |\overrightarrow{B}| sin \theta$
   * direction: right handed rule
+    * $\overrightarrow{u} \times \overrightarrow{v} = -\overrightarrow{v} \times \overrightarrow{u}$
+    * $\vec{a} \times \vec{b} \times \vec{c} = (\vec{a}\cdot\vec{c})\vec{b} - (\vec{a}\cdot\vec{b})\vec{c}$
+    * $(\vec{a} \times\vec{b})\cdot\vec{c} = (\vec{c}\times\vec{a})\cdot\vec{b} = (\vec{b}\times\vec{c})\cdot\vec{a}$
+* Differentiation/Integration w.r.t. time
 
 ## Coordinate Systems
 * Cartesian
   * $|\overrightarrow{w}|=\sqrt{w_{x}^{2}+w_{y}^{2}+w_{z}^{2}}$
-  * {$\hat{n_{x}}$, $\hat{n_{y}}$, $\hat{n_{z}}$} / {$\hat{i}$, $\hat{j}$, $\hat{k}$} 
+  * {$\hat{n_{x}}$, $\hat{n_{y}}$, $\hat{n_{z}}$} / {$\hat{i}$, $\hat{j}$, $\hat{k}$} Range: {$[0,\infty)$,$[0,\infty)$, $[0,\infty)$}
     * mutually perpendicular $\hat{n_{x}} \cdot \hat{n_{y}} =0$
     * unit length $|\hat{n_{x}}| = 1$
     * Right-hand Rule $\hat{n_{x}} \times \hat{n_{y}} = \hat{n_{z}}$
@@ -61,9 +76,9 @@ Vectors
     * cross product $\overrightarrow{u}\times \overrightarrow{w}=(u_{y}w_{z}-u_{z}w_{y})\hat{n_{x}}+(u_{z}w_{x}-u_{x}w_{z})\hat{n_{y}}+(u_{x}w_{y}-u_{y}w_{x})\hat{n_{z}}$
 * Cylindrical
 ![Cylindrical Coordinate Sys](./pics/Cyl.png)
-  * {$\hat{n_{\rho}}$, $\hat{n_{\varphi}}$, $\hat{n_{z}}$}
+  * {$\hat{n_{\rho}}$, $\hat{n_{\varphi}}$, $\hat{n_{z}}$} Range: {$[0,\infty)$,$[0,2\pi)$, $[0,\infty)$}
     * $\rho=\sqrt{x^{2}+y^{2}}$
-    * $\varphi=\text{arctan}\frac{y}{x}$
+    * $\varphi=\text{arctan}\frac{y}{x} (+\pi)$
     * $z=z$
     * $x=\rho \text{cos}\varphi$
     * $y=\rho \text{sin}\varphi$
@@ -72,10 +87,10 @@ Vectors
 * Spherical
 ![Sopherical](./pics/Sopher.png)
   * longitude and latitude system
-  * {$\hat{n_{r}}$, $\hat{n_{\varphi}}$, $\hat{n_{\theta}}$}
+  * {$\hat{n_{r}}$, $\hat{n_{\varphi}}$, $\hat{n_{\theta}}$} Range: {$[0,\infty)$,$[0,2\pi)$, $[0,\pi)$}
     *  $\rho=\sqrt{x^{2}+y^{2}+z^{2}}$ 
-    *  $\varphi=\text{arctan}\frac{y}{x}$ ($0, \pi$)
-    *  $\theta=\text{arctan}\frac{\sqrt{x^{2}+y^{2}}}{z}$ ($0,\pi/2$)
+    *  $\varphi=\text{arctan}\frac{y}{x} (+\pi)$ 
+    *  $\theta=\text{arctan}\frac{\sqrt{x^{2}+y^{2}}}{z} (+\pi)$ 
     * $x=r \text{sin}\theta \text{cos}\varphi$
     * $y=r \text{sin}\theta \text{sin}\varphi$
 	* $z=r\text{cos}\theta$
