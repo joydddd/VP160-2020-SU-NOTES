@@ -121,4 +121,6 @@ Acceleration
 see lecture notes for pics
 
 ### Relativity of Velocity/acceleration
+* $\vec{r} = \vec{r_{O'}} + \vec{r'}$
+* $\vec{v} = \vec{v_{O'}} + \vec{v'}$
 
