@@ -12,10 +12,10 @@ acceleration vs. speed change rate (will discuss later in nature coordinates
 * $\vec{v} = \dot{\rho}\hat{n_\rho} + \rho\dot{\varphi}\hat{n_\varphi}+\dot{z}\hat{n_z}$
 * $\vec{a} = (\ddot{\rho} - \rho\dot{\varphi}^2) \hat{n_\rho} + (\rho \ddot{\varphi } + 2\dot{\rho}\dot{\varphi}) \hat{n_\varphi} + \ddot{z}\hat{n_z}$
 ## 3D Spherical Coordinates
-*  $$\left(\begin{matrix} \dot{\hat{n_r}}\\\\\dot{\hat{n_\varphi}}\\\\\dot{\hat{n_\theta}} \end{matrix}\right) = \left(\begin{matrix} \dot{\theta} \hat{n}_{\theta}+\dot{\varphi} \sin \theta \hat{n}_{\varphi}\\\\-\dot{\varphi} \sin \theta \hat{n}_{r}-\dot{\varphi} \cos \theta \hat{n}_{\theta}\\\\-\dot{\theta} \hat{n}_{r}+\dot{\varphi} \cos \theta \hat{n}_{\varphi}\end{matrix}\right)$$
+*  $$\left(\begin{matrix} \dot{\hat{n_r}}\\\\\dot{\hat{n_\varphi}}\\\\\dot{\hat{n_\theta}} \end{matrix}\right) = \left(\begin{matrix} \dot{\theta} \hat{n_\theta}+\dot{\varphi} sin \theta \hat{n_\varphi}\\\\-\dot{\varphi} \sin \theta \hat{n_r}-\dot{\varphi} cos \theta \hat{n_\theta}\\\\-\dot{\theta} \hat{n_r}+\dot{\varphi} cos \theta \hat{n_\varphi}\end{matrix}\right)$$
 * $\vec{r} = r\hat{n_r}$
-* $\vec{v} = \dot{r}\hat{n}_{r}+r\dot{\theta}\hat{n}_{\theta}+r\dot{\varphi}\sin\theta\hat{n}_{\varphi}$
-* $\vec{a} = \ddot{r}\hat{n}_{r}+\dot{r}\dot{\hat{n}}_{r}+\dot{r}\dot{\theta}\hat{n}_{\theta}+r\ddot{\theta}\hat{n}_{\theta}+r\dot{\theta}\dot{\hat{n}}_{\theta}+\dot{r}\dot{\varphi}\sin\theta\hat{n}_{\varphi}+r\ddot{\varphi}\sin\theta\hat{n}_{\varphi}+r\dot{\varphi}\dot{\theta}\cos\theta\hat{n}_{\varphi}+r\dot{\varphi}\sin\theta\dot{\hat{n}}_{\varphi}$
+* $\vec{v} = \dot{r}\hat{n_r}+r\dot{\theta}\hat{n_\theta}+r\dot{\varphi}\sin\theta\hat{n_\varphi}$
+* $\vec{a} = \ddot{r}\hat{n_r}+\dot{r}\dot{\hat{n_r}}+\dot{r}\dot{\theta}\hat{n_\theta}+r\ddot{\theta}\hat{n_\theta}+r\dot{\theta}\dot{\hat{n_\theta}}+\dot{r}\dot{\varphi}sin\theta\hat{n_\varphi}+r\ddot{\varphi}sin\theta\hat{n_\varphi}+r\dot{\varphi}\dot{\theta}cos\theta\hat{n_\varphi}+r\dot{\varphi}sin\theta\dot{\hat{n_\varphi}}$
 ## Polar Coordinates
 > **transverse**: along $n_\varphi$
 > 
