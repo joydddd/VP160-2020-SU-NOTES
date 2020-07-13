@@ -1,3 +1,6 @@
+Meeting Recording:
+https://umich.zoom.us/rec/share/yJFxEa-o1mlJQInStW7Vf4UmAZi8X6a80yQarPsJnkiQXx9FDoV-b6D_QFpS5e1H
+
 # Lagrangian mechanics
 A highly generalized dynamics
 - generalized coordinates
