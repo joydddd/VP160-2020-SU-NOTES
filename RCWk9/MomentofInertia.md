@@ -1,3 +1,5 @@
+Recording of this RC:
+https://umich.zoom.us/rec/share/_-J6c5Kt00hJcNLrwWf5eYMrFbXuaaa8hCVK_qIKmUqU0GYDYPGlthg8vohxymzD
 ## Rotation
 Origin: wherever you feel easy to analyze
 usually where multiple forces join, or the application point of a force whose direction you don't know

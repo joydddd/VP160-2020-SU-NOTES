@@ -4,7 +4,6 @@
 - 18 N
   - consider Rope 1, lower block and Rope 2 as a whole. a = 2.3 $m/s^2$ and the forces on them are total gravity 1.5kg*g and the tension we want to find. Use Newton's second law. 
 - Just at the instant when the projectile is being launched.
-  - 
 - Less than the weight of A plus the weight of B.
   
 # Oscillation, non-inertia FOR, Kinetic Energy

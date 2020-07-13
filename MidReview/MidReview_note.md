@@ -14,7 +14,7 @@ Consider fictitious forces one by one.
 > NOTE: $\vec{a_{O'}}$, $\vec{\omega}$ is acceleration and angular velocity of the non-inertia FOR w.r.t any inertia FOR. $\vec{r'}$ and $\vec{v'}$ are the partical described in the non-inertia FOR.
 
 --------------------------------
-Gravity on earth is similar to d'Alembert forces. We may consider d'Alembert force as a kind of gravitational field. e.g. In a falling box, d'Alelbert force $ma_{O'}$ points upwards <=> a upwards gravitational field. The box FOR <=> inertia FOR with $g-a_{o'}$ gravitational field. 
+Gravity on earth is similar to d'Alembert forces. We may consider d'Alembert force as a kind of gravitational field. e.g. In a falling box, d'Alembert force $ma_{O'}$ points upwards <=> a upwards gravitational field. The box FOR <=> inertia FOR with $g-a_{o'}$ gravitational field. 
 
 
 ## Work and Energy
