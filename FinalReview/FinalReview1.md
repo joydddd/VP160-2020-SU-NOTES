@@ -46,9 +46,29 @@ We consider an instance during the process
 > Either solves the problem -- although one can be much more difficult than the other. You can also use a mixed method.
 ## Center of Mass
 see examples 
+A small trick: Pappus's centroid theorem (as a quick checker)
+https://baike.baidu.com/item/%E5%B7%B4%E6%99%AE%E6%96%AF%E5%AE%9A%E5%BE%8B/3050451?fromtitle=%E5%B7%B4%E6%99%AE%E6%96%AF%E5%AE%9A%E7%90%86&fromid=4335907
 ## variable mass sys
 An isolated system: conservation of momentum
 before erupting gas of mass dm: mass m and speed v (lab FOR) P: mv
 after: rocket: m - dm, v + dv, gas: dm, v - u P: (m-dm)(v+dv) + dm(v-u) = mv -udm +mdv
 $ 0 = d(mv) = m dv +  udm $ 
 -> $m \frac{dv}{dt} = - u \frac{dm}{dt}$ 
+
+# Fluid
+## Pressure at depth 
+$dp = -\rho g dy$
+$p = p_0 + \rho g h$
+### Absolute vs. Gauge pressure
+$p_{abs} = p_{atm} + p_{gauge}$ ($p_{gauge} = \rho g h)
+
+## Surface Tension
+wetting liquid vs. non-wetting liquid
+![Wetting and Non-wetting](SurfaceTension.png)
+
+## Fluid Motion
+Continuity: $A_1 v_1 = A_2 v_2$
+Kinetic Energy change: $dK = \frac{1}{2}\rho (v_2^2 - v_1^2) dV$
+Potential Energy change: $dU_{g} = \rho g (y_2 - y_1) dV$
+conservation of energy -> Bernoulli's Equation $p + \frac{1}{2} \rho v^2 + \rho g y = const$
+![Fuild Motion](FuildMotion.png)
